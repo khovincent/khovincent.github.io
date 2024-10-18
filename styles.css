@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,19 +7,21 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f5;
-    color: #333;
+    background-color: #f7f7f7; /* Very light gray */
+    color: #333; /* Dark gray text */
     line-height: 1.6;
 }
 
+/* Container */
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Header */
 header {
-    background-color: #4caf50;
+    background-color: #333333; /* Dark gray */
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -33,6 +36,7 @@ header p {
     margin-top: 0.5rem;
 }
 
+/* Sections */
 section {
     padding: 3rem 0;
     text-align: center;
@@ -40,10 +44,11 @@ section {
 
 h2 {
     font-size: 2rem;
-    color: #4caf50;
+    color: #333333; /* Dark gray */
     margin-bottom: 1.5rem;
 }
 
+/* Skills Grid */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -59,11 +64,17 @@ h2 {
 
 .skills-grid span {
     display: block;
-    background-color: #e8f5e9;
+    background-color: #e0e0e0; /* Light gray */
     padding: 0.75rem;
     border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
+.skills-grid span:hover {
+    background-color: #cccccc; /* Slightly darker light gray on hover */
+}
+
+/* Project List */
 .project-list {
     margin-top: 2rem;
     display: flex;
@@ -72,10 +83,16 @@ h2 {
 }
 
 .project-item {
-    background-color: #f0f0f5;
+    background-color: #f7f7f7; /* Very light gray */
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project-item h3 {
@@ -89,24 +106,37 @@ h2 {
     color: #555;
 }
 
+/* Button */
 .button {
     text-decoration: none;
     color: white;
-    background-color: #0077b5;
+    background-color: #555555; /* Medium gray */
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.button:hover {
+    background-color: #444444; /* Darker gray on hover */
+    transform: scale(1.05);
+}
+
+/* Contact Section */
 #contact {
-    background-color: #4caf50;
+    background-color: #333333; /* Dark gray */
     color: white;
     padding: 3rem 0;
+    text-align: center;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+#contact h2 {
+    color: white; /* Ensure heading is white */
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
