@@ -6,20 +6,26 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f8fc;
+    background-color: #f0f0f5;
     color: #333;
     line-height: 1.6;
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 header {
-    background-color: #4285F4;
+    background-color: #4caf50;
     color: white;
-    padding: 2rem;
+    padding: 2rem 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 header p {
@@ -28,54 +34,79 @@ header p {
 }
 
 section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
 }
 
 h2 {
-    font-size: 1.8rem;
-    color: #4285F4;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 1.5rem;
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .skills-grid h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
 .skills-grid span {
     display: block;
-    background-color: #E3F2FD;
-    padding: 0.5rem;
+    background-color: #e8f5e9;
+    padding: 0.75rem;
     border-radius: 8px;
-    text-align: center;
 }
 
-#stats img {
-    width: 100%;
-    margin-bottom: 1rem;
+.project-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-item {
+    background-color: #f0f0f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #555;
 }
 
 .button {
     text-decoration: none;
     color: white;
     background-color: #0077b5;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 5px;
     font-size: 1rem;
 }
 
+#contact {
+    background-color: #4caf50;
+    color: white;
+    padding: 3rem 0;
+}
+
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    background-color: #e0e0e0;
     padding: 1rem;
-    margin-top: 2rem;
 }
